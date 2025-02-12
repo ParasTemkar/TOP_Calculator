@@ -1,0 +1,36 @@
+#container1 {
+    background-color: beige;
+    border: black;
+  }
+  
+  #container2 {
+    background-color: beige;
+    margin: auto;
+    width: 300px; /* Reduced width */
+    height: 400px; /* Reduced height */
+    padding: 1% 1% 1% 1%; /* Reduced padding */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    flex: 1 1 25%;
+    padding: 15px; /* Reduced padding */
+    font-size: 1.2em; /* Reduced font size */
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+  }
+  
+  .number {
+    background-color: lightblue;
+  }
+  
+  .operator {
+    background-color: lightgreen;
+  }
+  
+  .space {
+    background: beige;
+    border: none;
+  }
