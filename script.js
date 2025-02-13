@@ -37,3 +37,27 @@ division.addEventListener('click', () => {
     operator = '/';
 });
 
+const equal = document.getElementById('equal');
+equal.addEventListener('click', () => {
+    let result;
+    switch (operator) {
+        case '+':
+            result = parseInt(num1) + parseInt(num2);
+            break;
+        case '-':
+            result = parseInt(num1) - parseInt(num2);
+            break;
+        case '*':
+            result = parseInt(num1) * parseInt(num2);
+            break;
+        case '/':
+            result = parseInt(num1) / parseInt(num2);
+            break;
+    }
+    document.getElementById('result').innerHTML = result;
+    num1 = '';
+    num2 = '';
+    operator = '';
+});
+
+
