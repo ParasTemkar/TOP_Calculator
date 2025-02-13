@@ -8,10 +8,10 @@ numbers.forEach(number => {
     number.addEventListener('click', (e) => {
         if (operator === '') {
             num1 += e.target.id;
-            document.getElementById('result').innerHTML = num1;
+            document.getElementById('result').innerHTML += num1;
         } else {
             num2 += e.target.id;
-            document.getElementById('result').innerHTML = num2;
+            document.getElementById('result').innerHTML += num2;
         }
     });
 });
@@ -20,21 +20,25 @@ numbers.forEach(number => {
 const addition = document.getElementById('add');
 addition.addEventListener('click', () => {
     operator = '+';
+    document.getElementById('result').innerHTML += operator;
 });
 
 const subtraction = document.getElementById('sub');
 subtraction.addEventListener('click', () => {
     operator = '-';
+    document.getElementById('result').innerHTML += operator;
 });
 
 const multiplication = document.getElementById('multi');
 multiplication.addEventListener('click', () => {
     operator = '*';
+    document.getElementById('result').innerHTML += operator;
 });
 
 const division = document.getElementById('div');
 division.addEventListener('click', () => {
     operator = '/';
+    document.getElementById('result').innerHTML += operator;
 });
 
 const equal = document.getElementById('equal');
@@ -55,7 +59,7 @@ equal.addEventListener('click', () => {
             break;
     }
     document.getElementById('result').innerHTML = result;
-    num1 = '';
+    num1 = document.getElementById('result').innerHTML;
     num2 = '';
     operator = '';
 });
