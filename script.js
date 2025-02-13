@@ -60,4 +60,11 @@ equal.addEventListener('click', () => {
     operator = '';
 });
 
-
+const clear = document.getElementById('clear');
+clear.addEventListener('click', () => {
+    num1 = '';
+    num2 = '';
+    operator = '';
+    document.getElementById('result').innerHTML = '';
+});
+ 
